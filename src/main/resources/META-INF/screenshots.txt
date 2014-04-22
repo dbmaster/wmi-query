@@ -1,0 +1,1 @@
+wmi-query-01.png=Legend of changes and parameters of tool displayed on the top

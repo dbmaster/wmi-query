@@ -1,0 +1,24 @@
+Select * from CIM_DataFile
+
+  Drive 
+  Path
+  FileName 
+  Extension
+  FileSize
+  Create / Update By / At
+
+Full List of attributes
+http://theroadtodelphi.wordpress.com/2011/07/21/manipulating-localremote-files-and-folders-using-delphi-and-wmi/
+
+
+Securing a Remote WMI Connection
+http://msdn.microsoft.com/en-us/library/aa393266(v=vs.85).aspx
+
+Connecting Through Windows Firewall
+http://msdn.microsoft.com/en-us/library/aa389286%28VS.85%29.aspx
+
+JACOB retrieve all the properties for a given Win32_* class object
+http://stackoverflow.com/questions/12698653/solved-java-jacob-retrieve-all-the-properties-for-a-given-win32-class-object
+
+' Enumerate cimv2 on remote host strComputer
+Set objWMIService = GetObject("winmgmts:" & "{impersonationLevel=Impersonate}!//" & strComputer & "\root\cimv2")
