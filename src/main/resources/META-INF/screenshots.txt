@@ -1,1 +1,1 @@
-wmi-query-01.png=Legend of changes and parameters of tool displayed on the top
+wmi-query-01.png=WMI Query sample to get sql services and their state

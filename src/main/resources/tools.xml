@@ -5,7 +5,7 @@
         <parameters>
             <parameter name="p_machineName" title="Machine name"    type="string" required="true" width="300" />
             <parameter name="p_namespace" title="Namespace"    type="string" required="true" width="300" defaultValue="root\cimv2" />
-            <parameter name="p_query"   title="WMI Query"  type="text"   required="true" width="300" height="5" />
+            <parameter name="p_query"   title="WMI Query"  type="text"   required="true" width="150" height="5" />
         </parameters>
         
         <output  script="wmi-query.groovy" type="html" />       

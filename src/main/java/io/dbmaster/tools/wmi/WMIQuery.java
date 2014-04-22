@@ -1,4 +1,4 @@
-package io.dbmaster.tools;
+package io.dbmaster.tools.wmi;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,17 +9,17 @@ import com.jacob.com.Dispatch;
 import com.jacob.com.EnumVariant;
 import com.jacob.com.Variant;
 
-public class WMIQuery{
+public class WMIQuery {
     
-    public static class WMIQueryResult{
+    public static class WMIQueryResult {
         List<String> headers = new ArrayList<String>();
         List<Object[]> values = new ArrayList<Object[]>();
     }
     
-    private WMIQuery(){
+    private WMIQuery() {
     }
     
-    public static WMIQueryResult execute(String machineName, String namespace, String query){
+    public static WMIQueryResult execute(String machineName, String namespace, String query) {
         WMIQueryResult result = new WMIQueryResult();
         try{
             ComThread.InitMTA();

@@ -10,7 +10,7 @@
     <name>WMI Query</name>
     <description>Runs any wmi query</description>
 
-    <version>0.0.2</version>
+    <version>0.0.6</version>
     <packaging>bundle</packaging>
 
     <parent>
@@ -55,7 +55,7 @@
                         <Tags>inventory,sqlserver</Tags>
                         <Author>slava.christin</Author>
                         <Import-Package>!*</Import-Package>
-                        <Embed-Dependency>*;type=!dll;inline=true,*;type=dll;inline=false</Embed-Dependency> 
+                        <Embed-Dependency>*;type=!dll;inline=true;scope=compile,*;type=dll;inline=false</Embed-Dependency>
                         <Bundle-NativeCode>jacob-1.14.3-x86.dll;processor=x86;osname=Win32,
                                            jacob-1.14.3-x64.dll;processor=x86_64;osname=Win32</Bundle-NativeCode>
                         <_removeheaders>Include-Resource,
