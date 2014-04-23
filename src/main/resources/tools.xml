@@ -1,6 +1,6 @@
 <tools>
     <tool id="wmi-query" title="WMI Query" >
-        <description>Runs WMI Queries</description>
+        <description>Runs a wmi query across one or multiple servers</description>
 
         <parameters>
             <parameter name="p_machineName" title="Machine name"    type="string" required="false" width="300" />
