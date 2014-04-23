@@ -10,7 +10,7 @@
     <name>WMI Query</name>
     <description>Runs any wmi query</description>
 
-    <version>0.0.10</version>
+    <version>0.3.0</version>
     <packaging>bundle</packaging>
 
     <parent>
