@@ -13,6 +13,9 @@ http://theroadtodelphi.wordpress.com/2011/07/21/manipulating-localremote-files-a
 
 Securing a Remote WMI Connection
 http://msdn.microsoft.com/en-us/library/aa393266(v=vs.85).aspx
+https://msdn.microsoft.com/en-us/library/aa389290%28v=vs.85%29.aspx
+http://www.poweradmin.com/help/enablewmi.aspx
+
 
 Connecting Through Windows Firewall
 http://msdn.microsoft.com/en-us/library/aa389286%28VS.85%29.aspx
@@ -22,3 +25,7 @@ http://stackoverflow.com/questions/12698653/solved-java-jacob-retrieve-all-the-p
 
 ' Enumerate cimv2 on remote host strComputer
 Set objWMIService = GetObject("winmgmts:" & "{impersonationLevel=Impersonate}!//" & strComputer & "\root\cimv2")
+
+
+
+

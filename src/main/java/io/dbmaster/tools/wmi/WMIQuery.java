@@ -24,6 +24,20 @@ public class WMIQuery {
         try{
             ComThread.InitMTA();
             ActiveXComponent objLocator = new ActiveXComponent("WbemScripting.SWbemLocator");
+            
+            /* 
+                NOT TESTED
+                For connecting with password use:
+                
+                Variant[] variantParameters =  new Variant[4];
+                variantParameters[0] = new Variant(server);
+                variantParameters[1] = new Variant("root\\cimv2");
+                variantParameters[2] = new Variant(user);
+                variantParameters[3] = new Variant(password);
+                Variant service = objLocator.invoke("ConnectServer", variantParameters);
+            */
+        
+        
             Variant service = objLocator.invoke("ConnectServer", new Variant(machineName), new Variant(namespace));
 
             ActiveXComponent axWMI = new ActiveXComponent(service.toDispatch());
