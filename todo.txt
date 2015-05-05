@@ -1,16 +1,3 @@
-Select * from CIM_DataFile
-
-  Drive 
-  Path
-  FileName 
-  Extension
-  FileSize
-  Create / Update By / At
-
-Full List of attributes
-http://theroadtodelphi.wordpress.com/2011/07/21/manipulating-localremote-files-and-folders-using-delphi-and-wmi/
-
-
 Securing a Remote WMI Connection
 http://msdn.microsoft.com/en-us/library/aa393266(v=vs.85).aspx
 https://msdn.microsoft.com/en-us/library/aa389290%28v=vs.85%29.aspx
@@ -28,4 +15,18 @@ Set objWMIService = GetObject("winmgmts:" & "{impersonationLevel=Impersonate}!//
 
 
 
+SELECT * FROM Win32_DiskPartition
 
+
+====   Search For Files  ====
+
+Select AccessMask, Name, Caption, CreationDate, Drive, FileName, FileSize, LastAccessed, LastModified from CIM_DataFile where 
+(Extension='ldf' or Extension='ndf' or Extension='mdf' ) and (not  name like "c:\\windows\\winsxs%")
+
+Full List of attributes
+http://theroadtodelphi.wordpress.com/2011/07/21/manipulating-localremote-files-and-folders-using-delphi-and-wmi/
+
+
+Local users and groups
+
+select * from Win32_GroupUser
