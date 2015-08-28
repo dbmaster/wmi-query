@@ -10,7 +10,7 @@ import com.branegy.tools.api.ExportType;
 
 public class WmiQueryIT extends BaseToolTestNGCase {
     @Test
-    @Parameters(["db-wmi-query.p_machineName","db-wmi-query.p_namespace","db-wmi-query.p_query"])
+    @Parameters(["wmi-query.p_machineName","wmi-query.p_namespace","wmi-query.p_query"])
     public void testModelExport(@Optional("127.0.0.1") String p_machineName,
         String p_namespace,
         @Optional("Select * From Win32_Process") String p_query) {
