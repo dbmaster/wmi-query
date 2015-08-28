@@ -8,7 +8,7 @@
    <name>WMI Query</name>
    <description>Runs any wmi query</description>
 
-   <version>0.3.0</version>
+   <version>0.3.1</version>
    <packaging>bundle</packaging>
 
    <parent>
