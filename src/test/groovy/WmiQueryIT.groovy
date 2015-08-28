@@ -18,7 +18,7 @@ public class WmiQueryIT extends BaseToolTestNGCase {
                            "p_namespace" : p_namespace,
                            "p_query" : p_query
                          ]
-        String result = tools.toolExecutor("db-wmi-query", parameters).execute()
+        String result = tools.toolExecutor("wmi-query", parameters).execute()
         assertTrue(result.contains("Results for"), "Unexpected search results ${result}");
     }
 }
